@@ -1,81 +1,19 @@
-# react-native-vector-drawable
+# @react-native-oh-tpl/react-native-vector-drawable
 
-> Android vector drawables in React Native.
+本项目基于 [react-native-vector-drawable (react-native-vector-drawable)](https://github.com/klarna-incubator/react-native-vector-drawable)
 
-[![Build Status][ci-image]][ci-url]
-[![License][license-image]][license-url]
-[![Developed at Klarna][klarna-image]][klarna-url]
+## 文档地址 / Documentation URL 
 
-An alternative to `react-native-svg` with 5x faster renders, lighter bundle and built in dark mode support.
+[中文 / Chinese](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-cn/react-native-vector-drawable.md)
 
-## Installation
+[英文 / English](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-en/react-native-vector-drawable.md)
 
-```sh
-yarn add @klarna/react-native-vector-drawable
-```
+## Codegen
 
-<!-- Taken from https://github.com/software-mansion/react-native-screens/blob/main/README-Fabric.md -->
+该库已接入 codegen，具体请查阅文档。
 
-### Fabric installation
+The library has been integrated with codegen. Please refer to the documentation for details.
 
-This library supports React Native New Architecture (aka Fabric). To use this library with your Fabric application, you have to:
+## 请悉知 / Acknowledgements
 
-1. Add latest `@klarna/react-native-vector-drawable`
-2. on iOS:
-   - Install pods using `RCT_NEW_ARCH_ENABLED=1 pod install` – this is the same command you run to prepare a Fabric build but you also need to run it after a new native library gets added.
-3. on Android:
-   - There are no additional steps required so long you app is configured to build with Fabric – this is typically configured by setting `newArchEnabled=true` in `gradle.properties` file in your project.
-
-## Usage
-
-```js
-import VectorDrawable from '@klarna/react-native-vector-drawable';
-
-const Component = () => (
-  <VectorDrawable
-    resourceName="ic_drawable_name"
-    style={{ width: 50, height: 50, tintColor: 'blue' }}
-  />
-);
-```
-
-### Props
-
-| Prop               | Description                                              | Default |
-| ------------------ | -------------------------------------------------------- | ------- |
-| **`resourceName`** | Name of the Android vector drawable resource.            | _None_  |
-| **`style`**        | See _Style props_. Note: border props are not supported. | _None_  |
-
-#### Style props
-
-| Prop             | Description                                                                                                                                              | Default |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| **`resizeMode`** | Determines how to resize the image when the frame doesn't match the raw image dimensions. Possible values are `cover`, `contain`, `stretch` and `center` | `cover` |
-| **`tintColor`**  | Changes the color of all the non-transparent pixels to the tintColor.                                                                                    | _None_  |
-
-## How to contribute
-
-See our guide on [contributing](.github/CONTRIBUTING.md).
-
-## Release History
-
-See our [changelog](CHANGELOG.md).
-
-## Deployment
-
-Update version in `package.json` and merge to master. This will publish the package to NPM, create a draft release on GitHub and a version tag. Edit the release with additional information and publish it.
-
-## License
-
-Copyright © 2022 Klarna Bank AB
-
-For license details, see the [LICENSE](LICENSE) file in the root of this project.
-
-<!-- Markdown link & img dfn's -->
-
-[ci-image]: https://img.shields.io/badge/build-passing-brightgreen?style=flat-square
-[ci-url]: https://github.com/klarna-incubator/react-native-vector-drawable/actions/
-[license-image]: https://img.shields.io/badge/license-Apache%202-blue?style=flat-square
-[license-url]: http://www.apache.org/licenses/LICENSE-2.0
-[klarna-image]: https://img.shields.io/badge/%20-Developed%20at%20Klarna-black?labelColor=ffb3c7&style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAALQAAAAAQAAAtAAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAABCgAwAEAAAAAQAAAA4AAAAA0LMKiwAAAAlwSFlzAABuugAAbroB1t6xFwAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAAVBJREFUKBVtkz0vREEUhsdXgo5qJXohkUgQ0fgFNFpR2V5ClP6CQu9PiB6lEL1I7B9A4/treZ47c252s97k2ffMmZkz5869m1JKL/AFbzAHaiRbmsIf4BdaMAZqMFsOXNxXkroKbxCPV5l8yHOJLVipn9/vEreLa7FguSN3S2ynA/ATeQuI8tTY6OOY34DQaQnq9mPCDtxoBwuRxPfAvPMWnARlB12KAi6eLTPruOOP4gcl33O6+Sjgc83DJkRH+h2MgorLzaPy68W48BG2S+xYnmAa1L+nOxEduMH3fgjGFvZeVkANZau68B6CrgJxWosFFpF7iG+h5wKZqwt42qIJtARu/ix+gqsosEq8D35o6R3c7OL4lAnTDljEe9B3Qa2BYzmHemDCt6Diwo6JY7E+A82OnN9HuoBruAQvUQ1nSxP4GVzBDRyBfygf6RW2/gD3NmEv+K/DZgAAAABJRU5ErkJggg==
-[klarna-url]: https://klarna.github.io
+本项目基于 MIT License ([react-native-vector-drawable](https://github.com/klarna-incubator/react-native-vector-drawable/blob/master/LICENSE)) ，请自由地享受和参与开源。
