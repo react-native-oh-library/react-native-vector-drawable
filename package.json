@@ -2,19 +2,15 @@
   "name": "@react-native-oh-tpl/react-native-vector-drawable",
   "version": "0.5.1-0.0.1",
   "description": "Android vector drawables in React Native",
-  "main": "index.js",
-  "scripts": {
+  "main": "src",
+  "types": "src/index.d.ts",
+   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type":"git",
-    "url":"git://github.com/react-native-oh-library/react-native-vector-drawable.git"
-  },
-  "homepage": "https://github.com/klarna-incubator/react-native-vector-drawable",
-  "bugs": {
-    "url": "https://github.com/klarna-incubator/react-native-vector-drawable/issues"
-  },
   "license": "Apache-2.0",
+  "harmony": {
+    "alias": "react-native-vector-drawable"
+  },
   "keywords": [
     "react-native",
     "react",
@@ -25,12 +21,6 @@
     "image"
   ],
   "author": "Joel Arvidsson",
-  "dependencies":{
-    "@klarna/react-native-vector-drawable":"0.5.1"
-  },
-  "harmony": {
-    "alias": "react-native-vector-drawable"
-  },
   "devDependencies": {
     "@types/react-native": "^0.67.8",
     "prettier": "^2.2.1"
