@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-vector-drawable",
+        "License": "Apache License",
+        "License File": "https://github.com/klarna-incubator/react-native-vector-drawable/blob/master/LICENSE",
+        "Version Number": "0.5.1",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/klarna-incubator/react-native-vector-drawable",
+        "Description": "Android vector drawables in React Native"
+    }
+]
