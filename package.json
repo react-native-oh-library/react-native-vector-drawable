@@ -1,6 +1,6 @@
 {
-  "name": "@react-native-oh-tpl/react-native-vector-drawable",
-  "version": "0.5.1-0.0.1",
+  "name": "@react-native-ohos/react-native-vector-drawable",
+  "version": "0.5.2-rc.0",
   "description": "Android vector drawables in React Native",
   "main": "src",
   "types": "src/index.d.ts",
